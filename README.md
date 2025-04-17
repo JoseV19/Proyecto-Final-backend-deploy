@@ -15,7 +15,7 @@ Antes de ejecutar la aplicación, asegúrate de tener instalado lo siguiente:
 1. Clona el repositorio:
 
    ```sh
-   git clone https://github.com/20034951/habits-tracker.git
+   git clone https://github.com/24000472/habits-tracker.git
    ```
 
 2. Entra en el directorio del proyecto:
@@ -43,8 +43,8 @@ npm start
 Está aplicación requiere variables de entorno, créalas en un archivo `.env` en la raíz del proyecto. Ejemplo:
 
 ```ini
-PORT=3001
-DATABASE_URL=mongodb://localhost:27017/mi_basededatos
+PORT=3000
+DATABASE_URL=mongodb://localhost:3000/mi_basededatos
 ```
 
 ## Construcción y Despliegue

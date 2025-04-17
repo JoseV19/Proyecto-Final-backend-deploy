@@ -1,0 +1,21 @@
+{
+    "version" : 2,
+    "builds" : [
+        {
+            "src" : "app.js",
+            "use" : "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src" : "/(.*)",
+            "dest": "app.js"
+        }
+    ],
+    "env": {
+        "PORT" : "3001",
+        "MONGO_URI" : "mongodb+srv://20034951:QpI7jx7JV8w57Fxm@cluster0.lytm3.mongodb.net/habitsTrackerApp?retryWrites=true&w=majority&appName=Cluster0",
+        "JWT_SECRET": "$3cr3t",
+        "NODE_ENV" : "development"
+    }
+}

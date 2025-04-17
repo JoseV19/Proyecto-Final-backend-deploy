@@ -3,6 +3,13 @@ const Habit = require('../models/Habit');
 const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 var router = express.Router();
+const app = require('./app');
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
+});
+
 
 const timeDifferenceInHours = (date1, date2) => {
   const differenceMS = Math.abs(date1 - date2);
